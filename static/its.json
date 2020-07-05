@@ -1,0 +1,120 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["hi"],
+            "responses": ["welcome, Are you looking to save on your monthly loan payments?"],
+            "options": ["Yes", "No"],
+            "context": [""]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Bye", "Goodbye"],
+            "responses": ["See you!", "Have a nice day", "Thankyou for using"],
+            "options": [],
+            "context": [""]
+        },
+        {
+            "tag": "thanks",
+            "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+            "responses": ["Happy to help!", "Any time!", "My pleasure", "Hope to see you again"],
+            "options": [],
+            "context": [""]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand", "Are you there!"],
+            "options": [],
+            "context": [""]
+        },
+        {
+            "tag": "Not looking for any assistance",
+            "patterns": ["No, I like paying more", "No"],
+            "responses": ["No problem, when you are ready to consolidate your loans and save money - giving you more financial freedom--just message us back. Thanks for chatting with us."],
+            "options": [],
+            "context": [""]
+        },
+        {
+            "tag": "Yes looking for any assistance",
+            "patterns": ["Yes"],
+            "responses": ["Great! What are you looking for specially?"],
+            "options": ["Better rates", "Loan consolidation", "All of the above", "None of the above"],
+            "context": [""]
+        },
+        {
+            "tag": "None of the above",
+            "patterns": ["None of the above"],
+            "responses": ["Hmmm..., can I pass along someone who can understand exactly what you need?"],
+            "options": ["connect", "No "],
+            "context": [""]
+        },
+        {
+            "tag": "Yes",
+            "patterns": ["connect"],
+            "responses": ["Great! how would you prefer to proceed."],
+            "options": [" Email me", "Call me", "I'd like to keep chatting"],
+            "context": [""]
+        },
+        {
+            "tag": "No",
+            "patterns": ["No"],
+            "responses": ["No problem, when you are ready to consolidate your loans and save money - giving you more financial freedom--just message us back. Thanks for chatting with us .",
+                "No problem. Just know we are here if you need us. Thanks for your time!", "No worries. Whenever you’re ready to take the next step, we’ll be ready to help you!"
+            ],
+            "options": [],
+            "context": [""]
+        },
+        {
+            "tag": "Other options",
+            "patterns": ["Better rates", "Loan consolidation", "All of the above"],
+            "responses": ["We can certainly help with that! How would you prefer to proceed."],
+            "options": [" Email me", "Call me", "I'd like to keep chatting "],
+            "context": [""]
+        },
+
+        {
+            "tag": "Email",
+            "patterns": ["EMAIL ME ", "Email"],
+            "responses": ["Perfect! Kindly tell me your email address so that we can get in touch."],
+            "options": [""],
+            "context": [""]
+        },
+        {
+            "tag": "CALL ME",
+            "patterns": ["CALL ME", "Call"],
+            "responses": ["You bet! Please tell me your phone number and we'll give you a call shortly"],
+            "options": [""],
+            "context": [""]
+        },
+        {
+            "tag": "KEEP CHATTING",
+            "patterns": ["KEEP CHATTING", "I'd like to keep chatting"],
+            "responses": ["That's great! I'll connect you with someone now."],
+            "options": [],
+            "context": ["search_hospital_by_params"]
+        },
+        {
+            "tag": "Away message",
+            "patterns": [],
+            "responses": ["Oops. Looks like they are tied up at the moment. Kindly tell me your email address so that we can get in touch.", "We're not currently online right now but if you leave your email, we'll get back to you as soon as possible!"],
+            "options": [],
+            "context": [""]
+        },
+        {
+            "tag": "End message",
+            "patterns": ["gmail","yahoo","com","co","in"],
+            "responses": ["Thank you our representative will send the details in mail shortly!"],
+            "options": [],
+            "context": [""]
+        },
+          {
+            "tag": "number",
+            "patterns": ["0123456789"],
+            "responses": ["Thank you our representative will contact you shortly!"],
+            "options": [],
+            "context": [""]
+        }
+
+    ]
+}

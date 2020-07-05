@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Chat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="static/css/main.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <img src="/static/bg2.jpeg" style="height:547px">
+  <audio id="myTune">
+    <source id="audioSource" src="">
+  </audio>
+  <div class="fabs">
+    <div class="chat">
+      <div class="chat_header">
+        <div class="chat_option">
+          <div class="header_img">
+            <img src="http://res.cloudinary.com/dqvwa7vpe/image/upload/v1496415051/avatar_ma6vug.jpg" />
+          </div>
+          <span id="chat_head">Jane Doe</span> <br> <span class="agent">Agent</span> <span class="online">(Online)</span>
+        </div>
+      </div>
+      <div id="chat_converse" class="chat_conversion chat_converse">
+        <div id="boot_chat">
+          <span class='chat_msg_item chat_msg_item_admin'>
+            <div class='chat_avatar'><img src='http://res.cloudinary.com/dqvwa7vpe/image/upload/v1496415051/avatar_ma6vug.jpg' /></div>
+            Heloooo welcome to chat bot
+          </span>
+        </div>
+        <div id="chat_response">
+        </div>
+      </div>
+      <div class="fab_field">
+        <a id="fab_send" class="fab"><i class="zmdi zmdi-mail-send"></i></a>
+        <textarea id="chatSend" name="chat_message" placeholder="Send a message" class="chat_field chat_message"></textarea>
+      </div>
+    </div>
+    <a id="prime" class="fab"><i class="prime zmdi zmdi-comment-outline"></i></a>
+  </div>
+  <script src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="static/js/index.js"></script>
+</body>
+
+</html>
